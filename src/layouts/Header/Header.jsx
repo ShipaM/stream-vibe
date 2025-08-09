@@ -1,6 +1,7 @@
 import { Logo } from "@/components/Logo"
 import "./Header.scss"
 import classNames from "classnames"
+import { Button } from "@/components/Button"
 const Header = ({ url }) => {
   console.log(url)
   const menuItems = [
@@ -29,6 +30,22 @@ const Header = ({ url }) => {
             ))}
           </ul>
         </nav>
+        <div className="header__actions">
+          <Button
+            className="header__button"
+            label="Search"
+            isLabelHidden
+            iconName={"Search"}
+            mode="transparent"
+          />
+          <Button
+            href="/"
+            label="Notifications"
+            isLabelHidden
+            iconName={"Notifications"}
+            mode="transparent"
+          />
+        </div>
       </div>
     </header>
   )
