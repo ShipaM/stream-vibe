@@ -17,11 +17,11 @@
       border-color: var(--color-black-15);
     }
   }
-}
 
-&__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 16px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+  }
 }
