@@ -1,5 +1,10 @@
+import "./Header.scss"
 const Header = () => {
-  return <header>Header</header>
+  return (
+    <header className="header">
+      <div className="header__inner container"></div>
+    </header>
+  )
 }
 
 export default Header
