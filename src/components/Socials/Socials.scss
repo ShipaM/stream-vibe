@@ -1,0 +1,9 @@
+.soc1als {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px fluid-to-laptop(14, 10);
+  }
+}
