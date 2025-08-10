@@ -2,6 +2,7 @@ import { Logo } from "@/components/Logo"
 import "./Header.scss"
 import classNames from "classnames"
 import { Button } from "@/components/Button"
+import { BurgerButton } from "@/components/BurgerButton"
 const Header = ({ url }) => {
   console.log(url)
   const menuItems = [
@@ -46,6 +47,7 @@ const Header = ({ url }) => {
             mode="transparent"
           />
         </div>
+        <BurgerButton className="header__burger-button" />
       </div>
     </header>
   )
