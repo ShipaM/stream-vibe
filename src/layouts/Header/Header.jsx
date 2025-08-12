@@ -3,7 +3,7 @@ import "./Header.scss"
 import classNames from "classnames"
 import { Button } from "@/components/Button"
 import { BurgerButton } from "@/components/BurgerButton"
-const Header = ({ url }) => {
+const Header = ({ url, isFixed }) => {
   console.log(url)
   const menuItems = [
     { name: "Home", href: "/" },
@@ -12,7 +12,10 @@ const Header = ({ url }) => {
     { name: "Contact", href: "/subscriptions" },
   ]
   return (
-    <header className="header">
+    <header
+      className={classNames("header", { "is-fixed": isFixed })}
+      id="header"
+    >
       <div className="header__inner container">
         <Logo className="header__logo" loading="eager" />
         <dialog className="header__overlay-menu-dialog">
