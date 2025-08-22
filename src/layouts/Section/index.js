@@ -1,1 +1,3 @@
-export { default as Section } from "./Section"
+import Section from "./Section"
+
+export default Section
